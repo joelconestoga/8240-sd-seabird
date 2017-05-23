@@ -1,0 +1,6 @@
+C:\Development\github\8240-sd-seabird\8240-Assignment1\bin\Debug\8240-Assignment1.exe.config
+C:\Development\github\8240-sd-seabird\8240-Assignment1\obj\Debug\8240-Assignment1.csprojResolveAssemblyReference.cache
+C:\Development\github\8240-sd-seabird\8240-Assignment1\bin\Debug\8240-Assignment1.exe
+C:\Development\github\8240-sd-seabird\8240-Assignment1\bin\Debug\8240-Assignment1.pdb
+C:\Development\github\8240-sd-seabird\8240-Assignment1\obj\Debug\8240-Assignment1.exe
+C:\Development\github\8240-sd-seabird\8240-Assignment1\obj\Debug\8240-Assignment1.pdb
