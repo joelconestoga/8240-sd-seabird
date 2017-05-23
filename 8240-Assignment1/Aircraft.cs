@@ -9,30 +9,20 @@ namespace _8240_Assignment1
     // Target
     class Aircraft : IAircraft
     {
-        int height;
-        bool airbone;
+        public int Height { get; private set; }
+        public bool Airbone { get; private set; }
 
         public Aircraft()
         {
-            height = 0;
-            airbone = false;
+            Height = 0;
+            Airbone = false;
         }
 
         public void TakeOff()
         {
             Console.WriteLine("Aircraft engine takeoff");
-            airbone = true;
-            height = 200; // Meters
-        }
-
-        public bool Airbone
-        {
-            get { return airbone; }
-        }
-
-        public int Height
-        {
-            get { return height; }
+            Airbone = true;
+            Height = 200; // Meters
         }
 
     }

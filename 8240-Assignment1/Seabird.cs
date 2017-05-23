@@ -9,7 +9,9 @@ namespace _8240_Assignment1
     // Adapter
     class Seabird : Seacraft, IAircraft
     {
-        int height = 0;
+        public int Height { get; private set; }
+
+        public bool Airbone { get { return Height > 50; } }
 
         // A two-way adapter hides and routes the Target's methods
         // Use Seacraft instructions to implement this one
@@ -19,23 +21,12 @@ namespace _8240_Assignment1
                 IncreaseRevs();
         }
 
-        // Routes this straight back to the Aircraft
-        public int Height
-        {
-            get { return height; }
-        }
-
         // This method is common to both Target and Adaptee
         public override void IncreaseRevs()
         {
             base.IncreaseRevs();
             if (Speed > 40)
-                height += 100;
-        }
-
-        public bool Airbone
-        {
-            get { return height > 50; }
+                Height += 100;
         }
     }
 }

@@ -10,7 +10,9 @@ namespace _8240_Assignment1
     interface IAircraft
     {
         bool Airbone { get; }
-        void TakeOff();
+
         int Height { get; }
+
+        void TakeOff();
     }
 }
