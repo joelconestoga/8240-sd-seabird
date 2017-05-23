@@ -19,6 +19,10 @@ namespace _8240_Assignment1
         public virtual void IncreaseRevs()
         {
             Speed += 10;
+
+            /* Notes from class:
+             * - return value instead of writing to console
+             */
             Console.WriteLine("Seacraft engine increases revs to " + Speed + " knots");
         }
 

@@ -18,8 +18,17 @@ namespace _8240_Assignment1
             Airbone = false;
         }
 
+        /* Notes from class:
+         * - add new parameter Height
+         * - add comment explaining which Unit the parameter represents
+         * - use Unsigned Integral Type and validate max/min value
+         */
         public void TakeOff()
         {
+
+            /* Notes from class:
+             * - return value instead of writing to console
+             */
             Console.WriteLine("Aircraft engine takeoff");
             Airbone = true;
             Height = 200; // Meters
