@@ -9,14 +9,18 @@ namespace _8240_Assignment1
     // Adaptee implementation
     class Seacraft : ISeacraft
     {
-        int speed = 0;
+        public int Speed { get; private set; }
+
+        public Seacraft()
+        {
+            Speed = 0;
+        }
 
         public virtual void IncreaseRevs()
         {
-            speed += 10;
-            Console.WriteLine("Seacraft engine increases revs to " + speed + " knots");
+            Speed += 10;
+            Console.WriteLine("Seacraft engine increases revs to " + Speed + " knots");
         }
 
-        public int Speed { get { return speed; } }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _8240_Assignment1
 {
     // Target
-    class Aircraft : IAircraft
+    public sealed class Aircraft : IAircraft
     {
         public int Height { get; private set; }
         public bool Airbone { get; private set; }
