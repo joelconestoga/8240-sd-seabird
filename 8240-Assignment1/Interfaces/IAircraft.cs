@@ -13,8 +13,6 @@ namespace _8240_Assignment1
 
         int Height { get; }
 
-        void TakeOff();
-
         string TakeOff(uint meters);
     }
 }

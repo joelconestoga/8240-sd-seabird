@@ -9,6 +9,8 @@ namespace _8240_Assignment1
     // Adaptee implementation
     public class Seacraft : ISeacraft
     {
+        private const int REVS_INCREMENT = 10;
+
         public int Speed { get; private set; }
 
         public Seacraft()
@@ -16,19 +18,9 @@ namespace _8240_Assignment1
             Speed = 0;
         }
 
-        public virtual void IncreaseRevs()
+        public virtual string IncreaseRevs()
         {
-            Speed += 10;
-
-            /* Notes from class:
-             * - return value instead of writing to console
-             */
-            Console.WriteLine("Seacraft engine increases revs to " + Speed + " knots");
-        }
-
-        public string IncreaseRevsNew()
-        {
-            Speed += 10;
+            Speed += REVS_INCREMENT;
             return "Seacraft engine increases revs to " + Speed + " knots";
         }
     }

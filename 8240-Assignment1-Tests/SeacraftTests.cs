@@ -24,19 +24,19 @@ namespace _8240_Assignment1_Tests
         [TestMethod]
         public void Seacraft_IncreaseRevsFromZero_SpeedIs10()
         {
-            string output = seacraft.IncreaseRevsNew();
+            string output = seacraft.IncreaseRevs();
             Assert.AreEqual(output, "Seacraft engine increases revs to 10 knots");
         }
 
         [TestMethod]
         public void Seacraft_IncreaseRevs3Times_SpeedIs30()
         {
-            seacraft.IncreaseRevsNew();
+            seacraft.IncreaseRevs();
 
-            string output = seacraft.IncreaseRevsNew();
+            string output = seacraft.IncreaseRevs();
             Assert.AreEqual(output, "Seacraft engine increases revs to 20 knots");
 
-            output = seacraft.IncreaseRevsNew();
+            output = seacraft.IncreaseRevs();
             Assert.AreEqual(output, "Seacraft engine increases revs to 30 knots");
         }
     }

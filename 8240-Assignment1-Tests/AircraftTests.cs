@@ -23,9 +23,9 @@ namespace _8240_Assignment1_Tests
         }
 
         [TestMethod]
-        public void Aircraft_TakeOff50Meters_AirborneTrue()
+        public void Aircraft_TakeOff51Meters_AirborneTrue()
         {
-            string output = aircraft.TakeOff(50);
+            string output = aircraft.TakeOff(51);
 
             Assert.AreEqual(output,
                 "Aircraft engine takeoff\n" +
@@ -33,16 +33,17 @@ namespace _8240_Assignment1_Tests
                 "Aircraft height increased to 20 meters\n" +
                 "Aircraft height increased to 30 meters\n" +
                 "Aircraft height increased to 40 meters\n" +
-                "Aircraft height increased to 50 meters\n");
+                "Aircraft height increased to 50 meters\n" +
+                "Aircraft height increased to 51 meters\n");
 
             Assert.IsTrue(aircraft.Airborne);
         }
 
         [TestMethod]
-        public void Aircraft_TakeOff19Meters_ReturnsException()
+        public void Aircraft_TakeOff50Meters_ReturnsException()
         {
-            MyAssert.AssertThrows<TooLowException>(() => aircraft.TakeOff(19),
-                "The aircraft cannot fly under 20 meters.");
+            MyAssert.AssertThrows<TooLowException>(() => aircraft.TakeOff(50),
+                "The aircraft cannot fly under 51 meters.");
         }
 
         [TestMethod]

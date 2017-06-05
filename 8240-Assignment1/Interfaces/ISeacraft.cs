@@ -10,6 +10,6 @@ namespace _8240_Assignment1
     interface ISeacraft
     {
         int Speed { get; }
-        void IncreaseRevs();
+        string IncreaseRevs();
     }
 }

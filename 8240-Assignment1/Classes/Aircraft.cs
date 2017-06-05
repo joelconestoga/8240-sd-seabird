@@ -9,8 +9,9 @@ namespace _8240_Assignment1
     // Target
     public sealed class Aircraft : IAircraft
     {
-        private const int MIN_HEIGHT = 20;
+        private const int MIN_HEIGHT = 51;
         private const int MAX_HEIGHT = 10000;
+        private const int TAKEOFF_INCREMENT = 10;
 
         public int Height { get; private set; }
         public bool Airborne { get; private set; }
@@ -21,29 +22,37 @@ namespace _8240_Assignment1
             Airborne = false;
         }
 
-        public void TakeOff()
-        {
-            throw new NotImplementedException("DELETE THIS METHOD");
-        }
-
         /// <summary>
-        /// Allows the Aircraft to take off be airborne
+        /// Allows the Aircraft to take off and be airborne
         /// </summary>
-        /// <param name="meters">Meters define which height should the aircraft go, between 20 and 10000</param>
+        /// <param name="meters">Meters define which height should the aircraft go, between 50 and 10000</param>
         /// <returns>Returns a string with the log of the aircraft taking off</returns>
         public string TakeOff(uint meters)
         {
             ValidateHeight(meters);
 
+            string output = IncreaseHeight(meters);
+
+            Airborne = true;
+
+            return output;
+        }
+
+        private string IncreaseHeight(uint meters)
+        {
+            uint dozens = meters / TAKEOFF_INCREMENT;
+            int remaining = (int)meters % TAKEOFF_INCREMENT;
+
             string output = "Aircraft engine takeoff\n";
 
-            while (Height < meters)
+            for (int i = 0; i < dozens; i++)
             {
                 Height += 10;
                 output += String.Format("Aircraft height increased to {0} meters\n", Height);
             }
 
-            Airborne = true;
+            Height += remaining;
+            output += String.Format("Aircraft height increased to {0} meters\n", Height);
 
             return output;
         }
