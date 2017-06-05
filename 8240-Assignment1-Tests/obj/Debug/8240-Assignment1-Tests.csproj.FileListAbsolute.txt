@@ -1,0 +1,8 @@
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\bin\Debug\8240-Assignment1-Tests.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\bin\Debug\8240-Assignment1-Tests.pdb
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\bin\Debug\8240-Assignment1.exe
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\bin\Debug\8240-Assignment1.pdb
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\obj\Debug\8240-Assignment1-Tests.csprojResolveAssemblyReference.cache
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\obj\Debug\8240-Assignment1-Tests.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-Tests\obj\Debug\8240-Assignment1-Tests.pdb

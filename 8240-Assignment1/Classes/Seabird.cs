@@ -11,13 +11,13 @@ namespace _8240_Assignment1
     {
         public int Height { get; private set; }
 
-        public bool Airbone { get { return Height > 50; } }
+        public bool Airborne { get { return Height > 50; } }
 
         // A two-way adapter hides and routes the Target's methods
         // Use Seacraft instructions to implement this one
         public void TakeOff()
         {
-            while (!Airbone)
+            while (!Airborne)
                 IncreaseRevs();
         }
 
@@ -27,6 +27,11 @@ namespace _8240_Assignment1
             base.IncreaseRevs();
             if (Speed > 40)
                 Height += 100;
+        }
+
+        public string TakeOff(uint meters)
+        {
+            throw new NotImplementedException();
         }
     }
 }

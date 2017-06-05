@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Aircraft.cs" />
-    <Compile Include="Experiment_MakeSeaBirdFly.cs" />
+    <Compile Include="Classes\Experiment_MakeSeaBirdFly.cs" />
+    <Compile Include="Classes\CustomExceptions.cs" />
     <Compile Include="Interfaces\IAircraft.cs" />
     <Compile Include="Interfaces\ISeacraft.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

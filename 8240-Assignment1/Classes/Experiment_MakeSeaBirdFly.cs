@@ -14,9 +14,9 @@ namespace _8240_Assignment1
             Console.WriteLine("Experiment 1: test the aircraft engine");
 
             IAircraft aircraft = new Aircraft();
-            aircraft.TakeOff();
+            Console.WriteLine(aircraft.TakeOff(50));
 
-            if (aircraft.Airbone)
+            if (aircraft.Airborne)
                 Console.WriteLine("The aircraft engine is fine, flying at " + aircraft.Height + " meters");
 
             // Classic usage of an adapter
@@ -31,7 +31,7 @@ namespace _8240_Assignment1
             (seabird as ISeacraft).IncreaseRevs();
             (seabird as ISeacraft).IncreaseRevs();
 
-            if (seabird.Airbone)
+            if (seabird.Airborne)
                 Console.WriteLine("Seabird flying at height " + seabird.Height +
                     " meters and speed " + (seabird as ISeacraft).Speed + " knots");
 

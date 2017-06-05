@@ -18,5 +18,12 @@ namespace _8240_Assignment1_Tests
             // assert Speed
             // assert string/value returned
         }
+
+        [TestMethod]
+        public void IncreaseRevsToInvalidSpeed()
+        {
+            // assert Speed
+            // assert string/value returned
+        }
     }
 }

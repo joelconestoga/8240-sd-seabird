@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_8240_Assignment1_Tests</RootNamespace>
-    <AssemblyName>_8240_Assignment1_Tests</AssemblyName>
+    <AssemblyName>8240-Assignment1-Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,8 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AircraftTests.cs" />
+    <Compile Include="MyAssert.cs" />
+    <Compile Include="SeacraftTests.cs" />
+    <Compile Include="SeabirdTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\8240-Assignment1\8240-Assignment1.csproj">
+      <Project>{b473ab37-0515-4f54-8366-0cc678d9b28a}</Project>
+      <Name>8240-Assignment1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

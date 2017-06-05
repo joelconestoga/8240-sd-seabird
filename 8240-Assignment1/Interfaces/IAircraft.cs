@@ -9,10 +9,12 @@ namespace _8240_Assignment1
     // ITarget interface
     interface IAircraft
     {
-        bool Airbone { get; }
+        bool Airborne { get; }
 
         int Height { get; }
 
         void TakeOff();
+
+        string TakeOff(uint meters);
     }
 }
