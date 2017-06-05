@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _8240_Assignment1
 {
     // Adaptee implementation
-    class Seacraft : ISeacraft
+    public class Seacraft : ISeacraft
     {
         public int Speed { get; private set; }
 
@@ -26,5 +26,10 @@ namespace _8240_Assignment1
             Console.WriteLine("Seacraft engine increases revs to " + Speed + " knots");
         }
 
+        public string IncreaseRevsNew()
+        {
+            Speed += 10;
+            return "Seacraft engine increases revs to " + Speed + " knots";
+        }
     }
 }

@@ -1,29 +1,43 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using _8240_Assignment1;
 
 namespace _8240_Assignment1_Tests
 {
     [TestClass]
     public class SeacraftTests
     {
-        [TestMethod]
-        public void CreateSeacraft()
+        Seacraft seacraft;
+
+        [TestInitialize]
+        public void Setup()
         {
-            // assert Speed
+            seacraft = new Seacraft();
         }
 
         [TestMethod]
-        public void IncreaseRevs()
+        public void Seacraft_DefaultConstructor_SpeedZero()
         {
-            // assert Speed
-            // assert string/value returned
+            Assert.AreEqual(seacraft.Speed, 0);
         }
 
         [TestMethod]
-        public void IncreaseRevsToInvalidSpeed()
+        public void Seacraft_IncreaseRevsFromZero_SpeedIs10()
         {
-            // assert Speed
-            // assert string/value returned
+            string output = seacraft.IncreaseRevsNew();
+            Assert.AreEqual(output, "Seacraft engine increases revs to 10 knots");
+        }
+
+        [TestMethod]
+        public void Seacraft_IncreaseRevs3Times_SpeedIs30()
+        {
+            seacraft.IncreaseRevsNew();
+
+            string output = seacraft.IncreaseRevsNew();
+            Assert.AreEqual(output, "Seacraft engine increases revs to 20 knots");
+
+            output = seacraft.IncreaseRevsNew();
+            Assert.AreEqual(output, "Seacraft engine increases revs to 30 knots");
         }
     }
 }
