@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace _8240_Assignment1
 {
-    // Adaptee interface
+    /// <summary>
+    /// Represents a device that can sail
+    /// </summary>
     interface ISeacraft
     {
         int Speed { get; }

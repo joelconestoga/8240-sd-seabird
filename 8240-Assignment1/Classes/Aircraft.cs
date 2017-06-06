@@ -6,16 +6,27 @@ using System.Threading.Tasks;
 
 namespace _8240_Assignment1
 {
-    // Target
+    /// <summary>
+    /// Aircraft represents a flying device, which main functionality is to take off.
+    /// </summary>
     public sealed class Aircraft : IAircraft
     {
         private const int MIN_HEIGHT = 51;
         private const int MAX_HEIGHT = 10000;
         private const int TAKEOFF_INCREMENT = 10;
 
+        /// <summary>
+        /// Represents the height where the Aircraft finds itself
+        /// </summary>
         public int Height { get; private set; }
+        /// <summary>
+        /// Indicate whether the Aircraft is flying or landed
+        /// </summary>
         public bool Airborne { get; private set; }
 
+        /// <summary>
+        /// Default constructor, wich also set up the initial values for Height and Airborne
+        /// </summary>
         public Aircraft()
         {
             Height = 0;
@@ -25,7 +36,7 @@ namespace _8240_Assignment1
         /// <summary>
         /// Allows the Aircraft to take off and be airborne
         /// </summary>
-        /// <param name="meters">Meters define which height should the aircraft go, between 50 and 10000</param>
+        /// <param name="meters">Meters define which height should the aircraft go, between 51 and 10000</param>
         /// <returns>Returns a string with the log of the aircraft taking off</returns>
         public string TakeOff(uint meters)
         {

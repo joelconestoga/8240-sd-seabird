@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace _8240_Assignment1
 {
-    // ITarget interface
+    /// <summary>
+    /// Represents a device that can fly
+    /// </summary>
     interface IAircraft
     {
         bool Airborne { get; }

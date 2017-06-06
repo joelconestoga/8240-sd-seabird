@@ -9,12 +9,18 @@ namespace _8240_Assignment1_Tests
     {
         Aircraft aircraft;
 
+        /// <summary>
+        /// Instantiate the subject under test
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
             aircraft = new Aircraft();
         }
 
+        /// <summary>
+        /// Tests object initialization
+        /// </summary>
         [TestMethod]
         public void Aircraft_DefaultConstructor_HeightZeroAirborneFalse()
         {
@@ -22,6 +28,9 @@ namespace _8240_Assignment1_Tests
             Assert.IsFalse(aircraft.Airborne);
         }
 
+        /// <summary>
+        /// Tests the minimum height to take off
+        /// </summary>
         [TestMethod]
         public void Aircraft_TakeOff51Meters_AirborneTrue()
         {
@@ -39,6 +48,9 @@ namespace _8240_Assignment1_Tests
             Assert.IsTrue(aircraft.Airborne);
         }
 
+        /// <summary>
+        /// Tests taking off with a height smaller than the minimum of 51 meters
+        /// </summary>
         [TestMethod]
         public void Aircraft_TakeOff50Meters_ReturnsException()
         {
@@ -46,6 +58,9 @@ namespace _8240_Assignment1_Tests
                 "The aircraft cannot fly under 51 meters.");
         }
 
+        /// <summary>
+        /// Tests taking off with a height larger than the maximum of 10000 meters
+        /// </summary>
         [TestMethod]
         public void Aircraft_TakeOff10001Meters_ReturnsException()
         {

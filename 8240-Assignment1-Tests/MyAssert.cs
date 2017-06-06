@@ -3,8 +3,22 @@ using System;
 
 namespace _8240_Assignment1_Tests
 {
+    /// <summary>
+    /// Class to hold custom implementations of asserts
+    /// </summary>
     public class MyAssert
     {
+        /// <summary>
+        /// Custom implementation of an assert to catch exceptions
+        /// </summary>
+        /// <typeparam name="TException">
+        /// Generic type that allows the assert to evaluate
+        /// any type of exception</typeparam>
+        /// <param name="action">
+        /// Method to be executed for triggering the exception
+        /// </param>
+        /// <param name="message">Message expected to be thrown</param>
+        /// <returns></returns>
         public static TException AssertThrows<TException>(Action action, string message)
             where TException : Exception
         {
