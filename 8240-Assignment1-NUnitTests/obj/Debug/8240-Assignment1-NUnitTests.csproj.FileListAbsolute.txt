@@ -1,0 +1,9 @@
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.pdb
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1.exe
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\nunit.framework.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1.pdb
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\nunit.framework.xml
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\obj\Debug\8240-Assignment1-NUnitTests.csprojResolveAssemblyReference.cache
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\obj\Debug\8240-Assignment1-NUnitTests.dll
+C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\obj\Debug\8240-Assignment1-NUnitTests.pdb

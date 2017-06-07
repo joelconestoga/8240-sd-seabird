@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll" total="14" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-06-07" time="11:10:12">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8784" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="LAPTOP-BRQ54H7R" user="joel" user-domain="LAPTOP-BRQ54H7R" />
+  <culture-info current-culture="en-CA" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll" executed="True" result="Success" success="True" time="0.099" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="_8240_Assignment1_NUnitTests" executed="True" result="Success" success="True" time="0.091" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="AircraftTest" executed="True" result="Success" success="True" time="0.056" asserts="0">
+            <results>
+              <test-case name="_8240_Assignment1_NUnitTests.AircraftTest.Aircraft_DefaultConstructor_HeightZeroAirborneFalse" executed="True" result="Success" success="True" time="0.037" asserts="2" />
+              <test-case name="_8240_Assignment1_NUnitTests.AircraftTest.Aircraft_TakeOff10001Meters_ReturnsException" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="_8240_Assignment1_NUnitTests.AircraftTest.Aircraft_TakeOff50Meters_ReturnsException" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="_8240_Assignment1_NUnitTests.AircraftTest.Aircraft_TakeOff51Meters_AirborneTrue" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="SeabirdTest" executed="True" result="Success" success="True" time="0.021" asserts="0">
+            <results>
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_DefaultConstructor_SpeedZeroHeightZeroAirborneFalse" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_IncreaseRevs40_Speed40HeightZeroAirborneFalse" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_IncreaseRevs50_Speed50Height100AirborneTrue" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_TakeOff110Meters_Speed60Height200AirborneTrue" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_TakeOff401Meters_ReturnsException" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_TakeOff50Meters_ReturnsException" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeabirdTest.Seabird_TakeOff51Meters_Speed50Height100AirborneTrue" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="SeacraftTest" executed="True" result="Success" success="True" time="0.007" asserts="0">
+            <results>
+              <test-case name="_8240_Assignment1_NUnitTests.SeacraftTest.Seacraft_DefaultConstructor_SpeedZero" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeacraftTest.Seacraft_IncreaseRevs3Times_SpeedIs30" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="_8240_Assignment1_NUnitTests.SeacraftTest.Seacraft_IncreaseRevsFromZero_SpeedIs10" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

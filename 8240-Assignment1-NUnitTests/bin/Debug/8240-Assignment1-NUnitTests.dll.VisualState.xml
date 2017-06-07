@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1017]C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll</TopNode>
+  <SelectedNode>[0-1017]C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1017]C:\Development\github\8240-sd-seabird\8240-Assignment1-NUnitTests\bin\Debug\8240-Assignment1-NUnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1018]_8240_Assignment1_NUnitTests" Expanded="true" />
+    <Node UniqueName="[0-1000]_8240_Assignment1_NUnitTests.AircraftTest" Expanded="true" />
+    <Node UniqueName="[0-1005]_8240_Assignment1_NUnitTests.SeabirdTest" Expanded="true" />
+    <Node UniqueName="[0-1013]_8240_Assignment1_NUnitTests.SeacraftTest" Expanded="true" />
+  </Nodes>
+</VisualState>
