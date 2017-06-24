@@ -17,4 +17,13 @@ namespace _8240_Assignment1
 
         string TakeOff(uint meters);
     }
+
+    /// <summary>
+    /// Represents a device that can sail
+    /// </summary>
+    interface ISeacraft
+    {
+        int Speed { get; }
+        string IncreaseRevs();
+    }
 }

@@ -46,8 +46,7 @@
     <Compile Include="Classes\Aircraft.cs" />
     <Compile Include="Classes\Experiment_MakeSeaBirdFly.cs" />
     <Compile Include="Classes\CustomExceptions.cs" />
-    <Compile Include="Interfaces\IAircraft.cs" />
-    <Compile Include="Interfaces\ISeacraft.cs" />
+    <Compile Include="Classes\Interfaces.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Seabird.cs" />
     <Compile Include="Classes\Seacraft.cs" />

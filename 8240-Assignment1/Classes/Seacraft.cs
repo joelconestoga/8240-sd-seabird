@@ -15,7 +15,7 @@ namespace _8240_Assignment1
         private const int REVS_INCREMENT = 10;
 
         /// <summary>
-        /// Represents the how fast the Seacraft is navigating
+        /// Represents how fast the Seacraft is navigating
         /// </summary>
         public int Speed { get; private set; }
 

@@ -24,14 +24,14 @@ namespace _8240_Assignment1
         public int Height { get; private set; }
 
         /// <summary>
-        /// Indicate whether the Seabird is flying or landed
+        /// Indicates whether the Seabird is flying or landed
         /// </summary>
         public bool Airborne { get { return Height > 50; } }
 
         /// <summary>
         /// Allows the Seabird to take off and be airborne
         /// </summary>
-        /// <param name="meters">Meters define which height should the Seabird go, between 51 and 10000</param>
+        /// <param name="meters">Meters define which height should the Seabird go, between 51 and 400</param>
         /// <returns>Returns a string with the log of the Seabird taking off</returns>
         public string TakeOff(uint meters)
         {

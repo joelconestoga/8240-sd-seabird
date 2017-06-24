@@ -20,7 +20,7 @@ namespace _8240_Assignment1
         /// </summary>
         public int Height { get; private set; }
         /// <summary>
-        /// Indicate whether the Aircraft is flying or landed
+        /// Indicates whether the Aircraft is flying or landed
         /// </summary>
         public bool Airborne { get; private set; }
 

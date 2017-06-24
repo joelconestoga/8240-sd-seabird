@@ -10,7 +10,7 @@ namespace _8240_Assignment1_NUnitTests
         Seacraft seacraft;
 
         /// <summary>
-        /// Instantiate the subject under test
+        /// Instantiates the subject under test
         /// </summary>
         [SetUp]
         public void Setup()
